@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#fff">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스크롤 방식을 선택해주세요"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:background="@drawable/board_background_register"
+            android:id="@+id/scroll_left_right_item"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/scroll_left_right"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scroll_up_down_item"
+            android:background="@drawable/board_background_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/scroll_left_right_item"
+            android:layout_toEndOf="@+id/scroll_left_right_item">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/scroll_up_down"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+             />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

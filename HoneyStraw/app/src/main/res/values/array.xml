@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabName">
+        <item>홈</item>
+        <item>브랜드</item>
+        <item>빨대</item>
+        <item>알림</item>
+    </string-array>
+
+    <string-array name="brandName">
+        <item>맥도날드</item>
+        <item>다이소</item>
+        <item>롯슨스</item>
+        <item>서브웨이</item>
+        <item>스타벅스</item>
+        <item>올리브영</item>
+
+    </string-array>
+</resources>

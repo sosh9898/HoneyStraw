@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bb000000">
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:background="@drawable/base_selector"
+            android:id="@+id/image_crop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/scissor" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="꿀팁 제작소"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/register_edit_back_btn"
+            android:background="@drawable/base_selector"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"/>
+
+
+
+    </RelativeLayout>
+
+    <com.jyoung.honeystraw.base.BaseViewPager
+        android:id="@+id/tip_register_edit_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"></com.jyoung.honeystraw.base.BaseViewPager>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_bar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/app2"/>
+
+        <TextView
+            android:id="@+id/page_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/colorBaseText"
+            android:textSize="23sp"
+            tools:text="3/7" />
+
+       <TextView
+           android:background="@drawable/base_selector"
+           android:id="@+id/commit_btn"
+           android:layout_marginTop="7dp"
+           android:layout_marginLeft="220dp"
+           android:layout_width="50dp"
+           android:layout_height="40dp"
+           android:padding="5dp"
+           android:textSize="20sp"
+           android:textColor="@color/colorBaseText"
+           android:text="완료"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

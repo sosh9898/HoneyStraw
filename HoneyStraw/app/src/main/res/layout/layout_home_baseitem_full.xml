@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_tip"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/board_background_register"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cover_image_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+             />
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/gradient_cover">
+        <TextView
+            android:gravity="bottom"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:id="@+id/cover_title_full"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="내에에에에에에에에에에에ㅔ에에에에ㅔ에ㅔ에에ㅔ에에ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ용" />
+
+                </LinearLayout>
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

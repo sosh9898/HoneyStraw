@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/baseBackground"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:id="@+id/profile_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/profile_image"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/text_tip_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tip_num"
+                android:textColor="#aaaaaa"
+                android:text="꿀 팁" />
+
+            <TextView
+                android:id="@+id/profile_tip_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+
+                android:text="0"
+                android:textColor="@color/colorBaseText"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/text_straw_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#aaaaaa"
+                android:layout_below="@+id/profile_straw_num"
+                android:text="빨 대" />
+
+            <TextView
+                android:id="@+id/profile_straw_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorBaseText"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/text_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_like_num"
+                android:textColor="#aaaaaa"
+                android:text="좋아요" />
+
+            <TextView
+                android:id="@+id/profile_like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBaseText"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/profile_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="꿀팁매니저"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:gravity="center"
+        android:layout_toRightOf="@+id/profile_image"
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_count"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="알바생들에게 직접 듣는 꿀팁!!"
+        android:textColor="#777777"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nickname_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 님의 꿀팁"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

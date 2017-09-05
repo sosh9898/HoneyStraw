@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jyoung.honeystraw.ui.splash.SplashActivity">
+
+    <com.song.refresh_view.PullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_layout"
+        tools:context="com.songxian.smilerefresh.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </com.song.refresh_view.PullToRefreshView>
+</LinearLayout>

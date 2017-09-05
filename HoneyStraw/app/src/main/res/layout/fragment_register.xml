@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/tip_title_edit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="이곳에 제목을 입력해주세요"
+                android:maxLength="40"
+                android:textColorHint="@color/colorBaseLine"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/title_line"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/colorBaseLine"></FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/tip_brand_spinner"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:background="@drawable/board_background_register"></Spinner>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/brand_line"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorBaseLine"></FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="커버와 배경을 등록해주세요"
+            android:textColor="@color/colorBaseText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cover_background_line"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBaseLine"></FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/register_cover_item"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+
+                <ImageView
+                    android:id="@+id/register_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/board_background_register"
+                    android:padding="1dp"
+                    android:scaleType="fitCenter" />
+
+
+                <ImageView
+                    android:id="@+id/photo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photo_camera" />
+
+                <TextView
+                    android:id="@+id/register_cover_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/register_selector"
+                    android:gravity="center"
+                    android:textColor="@color/splashBackground"
+                    android:textSize="45sp"
+                    android:visibility="gone" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/register_background_item"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/register_cover_item"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+
+                <ImageView
+                    android:id="@+id/register_background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/board_background_register"
+                    android:padding="1dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/photo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photo_camera" />
+
+                <TextView
+                    android:id="@+id/register_background_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/register_selector"
+                    android:gravity="center"
+                    android:textColor="@color/splashBackground"
+                    android:textSize="45sp"
+                    android:visibility="gone" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cover_sign"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/board_background_cover"
+            android:gravity="center"
+            android:text="커버"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/background_sign"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/board_background_cover"
+            android:gravity="center"
+            android:text="배경"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="팁을 추가해주세요"
+                android:textColor="@color/colorBaseText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/tip_base_line"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorBaseLine"></FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/register_tip_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    <FrameLayout
+        android:id="@+id/tip_bottom_line"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorBaseLine"></FrameLayout>
+
+</LinearLayout>
+
+

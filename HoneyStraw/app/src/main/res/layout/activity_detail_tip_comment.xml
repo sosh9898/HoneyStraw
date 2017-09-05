@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jyoung.honeystraw.ui.tip.DetailTipCommentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        ></android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/comment_toolbar"
+        android:id="@+id/comment_rcv"
+        android:layout_above="@+id/comment_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <!--<com.airbnb.lottie.LottieAnimationView-->
+        <!--android:id="@+id/progress_bar_lottie"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:lottie_fileName="crown.json"-->
+        <!--app:lottie_loop="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:lottie_autoPlay="true"/>-->
+    <LinearLayout
+        android:background="@color/colorNotify"
+        android:id="@+id/comment_item"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            >
+        <EditText
+            android:paddingTop="6dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/comment_edit"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <Button
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/comment_background"
+            android:text="등록"
+            android:textColor="#fff"
+            android:id="@+id/comment_register_image"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

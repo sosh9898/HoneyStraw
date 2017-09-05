@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jyoung.honeystraw.ui.search.SearchActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/search_back_image"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/search_edit"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:hint="검색"
+            android:imeOptions="actionSearch"
+            android:background="@null"
+            android:textColor="@color/colorBaseText"
+            android:textColorHint="@color/colorBaseText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_content"
+        android:layout_below="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@+id/search_toolbar"
+        android:id="@+id/search_auto_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

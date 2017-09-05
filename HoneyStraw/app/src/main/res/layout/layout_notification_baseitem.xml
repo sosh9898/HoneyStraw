@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:background="@drawable/notify_selector"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notify_profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/colorBaseLine"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/notification_target_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notify_profile_image"
+        android:layout_toRightOf="@+id/notify_profile_image"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="꿀팁매니저" />
+
+    <TextView
+        android:id="@+id/temp_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notify_profile_image"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/notification_target_id"
+        android:text="님이"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/notification_my_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notify_profile_image"
+        android:layout_toRightOf="@+id/temp_text1"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="꿀팁마스터" />
+
+
+    <TextView
+        android:id="@+id/temp_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notify_profile_image"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/notification_my_id"
+        android:text="님의"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/notification_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notification_target_id"
+        android:layout_below="@+id/notification_my_id"
+        android:textColor="@color/colorBaseText"
+        android:textSize="16sp"
+        tools:text="게시글을 게시글을 빨대하였습니다" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notification_content"
+        android:layout_below="@+id/notification_content">
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/notification_postdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/notification_image"
+            android:textSize="14sp"
+            tools:text="8시간 전" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/notification_delete_item"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="해당 알림은 삭제되었습니다."
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

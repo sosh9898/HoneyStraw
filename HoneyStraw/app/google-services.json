@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "511433079522",
+    "firebase_url": "https://honeystraw-dad7e.firebaseio.com",
+    "project_id": "honeystraw-dad7e",
+    "storage_bucket": "honeystraw-dad7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511433079522:android:cfa37b7537b6878f",
+        "android_client_info": {
+          "package_name": "com.jyoung.honeystraw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511433079522-chmpsbpjpqoarfc5155hb9lsl5qd4jaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkJq-IkHd0L7W2kqlwNIA5I_G9VPjiCdA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

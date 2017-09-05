@@ -1,0 +1,21 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+        <!--<item android:drawable="@color/colorTipTouch" android:state_pressed="true">-->
+
+        <!--</item>-->
+
+        <!--<item android:drawable="@color/colorTipTouch" android:state_focused="true">-->
+        <!--</item>-->
+
+<!--</selector>-->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorTipTouch">
+        <item>
+                <shape android:shape="rectangle">
+                        <solid android:color="@color/splashBackground" />
+                </shape>
+        </item>
+</ripple>
+

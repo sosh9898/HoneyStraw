@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tip_selector">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/brandname_image"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            tools:src="@drawable/daiso_logo"/>
+    <TextView
+        android:id="@+id/brandname_text"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorBaseText"
+        tools:text="테스트"/>
+
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="2dp"
+        android:background="#eeeeee"></FrameLayout>
+</LinearLayout>

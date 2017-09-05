@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+
+        <ImageView
+            android:id="@+id/register_base_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="1dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/register_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/register_selector"
+            android:gravity="center"
+            android:textColor="@color/splashBackground"
+            android:textSize="70sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/register_base_number"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:background="@drawable/board_background_tip"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+</RelativeLayout>

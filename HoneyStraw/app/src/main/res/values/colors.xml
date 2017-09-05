@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFb400</color>
+    <color name="colorAccent">#FF9B00</color>
+    <color name="baseBackground">#FAFAFA</color>
+    <color name="splashBackground">#FFFFFF</color>
+    <color name="colorBaseText">#212121</color>
+    <color name="colorTransparency">#bb000000</color>
+    <color name="colorTransparencyCover">#99000000</color>
+    <color name="colorBaseLine">#cbcbcb</color>
+    <color name="colorNotify">#44FFE082</color>
+    <color name="colorTipTouch">#88FFE082</color>
+    <color name="colorOnTouch">#aacbcbcb</color>
+    <color name="colorOnTouchNotify">#99dddddd</color>
+</resources>

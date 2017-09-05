@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+      <RelativeLayout
+          android:id="@+id/register_footer_item"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/board_background_register"
+          >
+
+          <ImageView
+              android:layout_centerInParent="true"
+              android:src="@drawable/plus"
+              android:id="@+id/register_footer_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+
+      </RelativeLayout>
+
+</android.support.v7.widget.CardView>
