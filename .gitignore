@@ -20,4 +20,5 @@ proguard/
 *.ipr
 *.iws
 .idea/
-app/src/main/java/com/jyoung/hoenystraw/application/ApplicationController.java
+HoneyStraw/app/src/main/java/com/jyoung/hoenystraw/application/ApplicationController.java
+honeystraw.git/
