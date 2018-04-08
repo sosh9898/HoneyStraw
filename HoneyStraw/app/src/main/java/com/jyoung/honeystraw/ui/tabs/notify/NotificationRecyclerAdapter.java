@@ -164,7 +164,7 @@ public class NotificationRecyclerAdapter extends RecyclerView.Adapter {
         }
     }
 
-    public String calculateTime(Date date) {
+    public static String calculateTime(Date date) {
 
         long curTime = System.currentTimeMillis();
         long regTime = date.getTime();

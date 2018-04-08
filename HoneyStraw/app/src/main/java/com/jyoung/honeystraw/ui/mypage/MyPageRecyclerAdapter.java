@@ -78,6 +78,8 @@ public class MyPageRecyclerAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if(holder instanceof MypageBaseViewHolder){
             ((MypageBaseViewHolder)holder).bindView(coverList.get(position));
+
+            holder.getAdapterPosition();  ///FIXME 여기 이런식으로 가능!!
         }else if(holder instanceof MyPageHeaderViewHolder){
             ((MyPageHeaderViewHolder)holder).bindView();
         }
@@ -186,6 +188,7 @@ public class MyPageRecyclerAdapter extends RecyclerView.Adapter {
             coverTitle.setText(cover.getCoverContent());
             customHideTipDialog = new CustomHideTipDialog(context,cover.getCoverNum(),getAdapterPosition(),MyPageRecyclerAdapter.this);
 
+            notifyDataSetChanged();
             fullTip.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {

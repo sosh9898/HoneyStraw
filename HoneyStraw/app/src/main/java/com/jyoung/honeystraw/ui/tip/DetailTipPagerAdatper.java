@@ -16,6 +16,7 @@ import com.jyoung.honeystraw.model.TipTemplate;
 
 public class DetailTipPagerAdatper extends FragmentStatePagerAdapter {
     SparseArray<Fragment> detailTipFragments = new SparseArray<Fragment>();
+
     int count;
     DetailTips.ResultData resultData;
     TipTemplate template;

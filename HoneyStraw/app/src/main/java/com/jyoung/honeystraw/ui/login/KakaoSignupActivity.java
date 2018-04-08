@@ -101,8 +101,6 @@ public class KakaoSignupActivity extends Activity {
     }
 
     protected  void showSignup(){
-        Log.d("kakaokkkk", "?????");
-
         redirectLoginActivity();
     }
 

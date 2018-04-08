@@ -101,7 +101,6 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onSessionOpened() {
             redirectSignupActivity();
-            Log.d("kakaokkkk", "?");
 
         }
 
@@ -128,7 +127,6 @@ public class LoginActivity extends AppCompatActivity {
 //    }
 
     protected void redirectSignupActivity() {
-        Log.d("kakaokkkk", "?");
 
         final Intent intent = new Intent(this, KakaoSignupActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
@@ -191,7 +189,7 @@ public class LoginActivity extends AppCompatActivity {
                                                 startActivity(i);
                                             } else {
                                                 try {
-                                                    preferencesService.setPrefData("id", json.get("email").toString()+"facebook");
+                                                    preferencesService.setPrefData("id", json.get("email").toString() + "facebook");
                                                 } catch (JSONException e) {
                                                     e.printStackTrace();
                                                 }
@@ -224,12 +222,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onError(FacebookException error) {
                 Log.e("test", "Error: " + error);
-                //finish();
             }
 
             @Override
             public void onCancel() {
-                //finish();
             }
         });
     }

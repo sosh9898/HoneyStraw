@@ -588,6 +588,7 @@ public class RegisterFragment extends Fragment {
         RequestBody scrollType = RequestBody.create(MediaType.parse("multipart/form-data"), selectScrollType());
         RequestBody[] content = new RequestBody[returnTipsList.size()];
         RequestBody postdate = RequestBody.create(MediaType.parse("multipart/form-data"), dateformat.format(date));
+
         for (int i = 0; i < returnTipsList.size(); i++) {
             content[i] = RequestBody.create(MediaType.parse("multipart/form-data"), returnTipsList.get(i).getReturnContent());
         }
@@ -626,6 +627,8 @@ public class RegisterFragment extends Fragment {
                 bitmap.recycle();
             }
         }
+
+
 
         Call<RequestResult> registerTip = service.registerTip(body, title, brand, scrollType, coverType, userId, content, postdate);
         registerTip.enqueue(new Callback<RequestResult>() {
