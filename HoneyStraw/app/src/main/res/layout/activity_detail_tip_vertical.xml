@@ -13,10 +13,10 @@
         android:scaleType="fitXY"
         />
 
-    <com.jyoung.honeystraw.base.VerticalViewPager
+    <com.jyoung.honeystraw.base.customview.VerticalViewPager
         android:id="@+id/tip_viewpager_vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.jyoung.honeystraw.base.VerticalViewPager>
+        android:layout_height="match_parent"></com.jyoung.honeystraw.base.customview.VerticalViewPager>
 
     <RelativeLayout
         android:id="@+id/bottom_bar_vertical"

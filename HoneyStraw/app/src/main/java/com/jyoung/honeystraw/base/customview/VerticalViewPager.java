@@ -1,4 +1,4 @@
-package com.jyoung.honeystraw.base;
+package com.jyoung.honeystraw.base.customview;
 
 /**
  * Created by jyoung on 2017. 8. 17..

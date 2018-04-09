@@ -3,4 +3,9 @@
     <string name="kakao_app_key">01de36a616dcf173c662034d930f9ac3</string>
     <string name="facebook_app_id">328752980918015</string>
     <string name="fb_login_protocol_scheme">fb328752980918015</string>
+
+    <declare-styleable name="TipView">
+        <attr name="img" format="reference|integer" />
+        <attr name="text" format="reference|string" />
+    </declare-styleable>
 </resources>

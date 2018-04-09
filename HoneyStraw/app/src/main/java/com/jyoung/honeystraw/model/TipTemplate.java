@@ -8,9 +8,18 @@ import android.os.Parcelable;
  */
 public class TipTemplate implements Parcelable {
 
-    public TipTemplate(String tipImage, String tipContent) {
+    public TipTemplate(String tipImage, String tipContent, int tipTemplateNum) {
         this.tipImage = tipImage;
         this.tipContent = tipContent;
+        this.tipTemplateNum = tipTemplateNum;
+    }
+
+    public int getTipTemplateNum() {
+        return tipTemplateNum;
+    }
+
+    public void setTipTemplateNum(int tipTemplateNum) {
+        this.tipTemplateNum = tipTemplateNum;
     }
 
     public String getTipImage() {
@@ -29,8 +38,9 @@ public class TipTemplate implements Parcelable {
         this.tipContent = tipContent;
     }
 
-    public String tipImage;
-    public String tipContent;
+    private String tipImage;
+    private String tipContent;
+    private int tipTemplateNum;
 
     public TipTemplate(Parcel in) {
         readFromParcel(in);
@@ -44,10 +54,12 @@ public class TipTemplate implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(tipImage);
         parcel.writeString(tipContent);
+        parcel.writeInt(tipTemplateNum);
     }
     private void readFromParcel(Parcel in){
         tipImage = in.readString();
         tipContent = in.readString();
+        tipTemplateNum = in.readInt();
 
     }
 
